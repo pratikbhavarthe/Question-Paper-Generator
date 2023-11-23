@@ -1,4 +1,3 @@
-// questionPaperGenerator.js
 const questionStore = require('./questionStore');
 
 function filterQuestionsByDifficulty(difficulty) {

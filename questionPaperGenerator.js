@@ -1,7 +1,8 @@
+// questionPaperGenerator.js
 const questionStore = require('./questionStore');
 
 function filterQuestionsByDifficulty(difficulty) {
-    return questionStore.filter(question => question.difficulty === difficulty);
+    return questionStore.filter(question => question.difficulty.toLowerCase() === difficulty.toLowerCase());
 }
 
 function getQuestionPaper(totalMarks, difficultyDistribution) {
